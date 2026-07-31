@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+enum Day
+{
+    MONDAY,
+    TUESDAY,
+    WEDNESDAY,
+    THURSDAY,
+    FRIDAY
+};
+
+int main()
+{
+    enum Day day = WEDNESDAY;
+
+    switch(day)
+    {
+        case MONDAY:
+            printf("Monday");
+            break;
+
+        case TUESDAY:
+            printf("Tuesday");
+            break;
+
+        case WEDNESDAY:
+            printf("Wednesday");
+            break;
+
+        case THURSDAY:
+            printf("Thursday");
+            break;
+
+        case FRIDAY:
+            printf("Friday");
+            break;
+    }
+
+    return 0;
+}
+Output
+Wednesday
