@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+enum AccountStatus
+{
+    ACTIVE,
+    BLOCKED,
+    SUSPENDED,
+    CLOSED
+};
+
+int main()
+{
+    enum AccountStatus status = BLOCKED;
+
+    if(status == ACTIVE)
+        printf("Account is Active");
+    else if(status == BLOCKED)
+        printf("Account is Blocked");
+    else if(status == SUSPENDED)
+        printf("Account is Suspended");
+    else
+        printf("Account is Closed");
+
+    return 0;
+}
+Output
+Account is Blocked
