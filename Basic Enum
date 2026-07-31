@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+enum Day
+{
+    MONDAY,
+    TUESDAY,
+    WEDNESDAY,
+    THURSDAY,
+    FRIDAY
+};
+
+int main()
+{
+    enum Day today = WEDNESDAY;
+
+    printf("Day value = %d\n", today);
+
+    return 0;
+}
+Output
+Day value = 2
