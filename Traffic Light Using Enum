@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+enum Signal
+{
+    RED,
+    YELLOW,
+    GREEN
+};
+
+int main()
+{
+    enum Signal signal = GREEN;
+
+    switch(signal)
+    {
+        case RED:
+            printf("STOP");
+            break;
+
+        case YELLOW:
+            printf("WAIT");
+            break;
+
+        case GREEN:
+            printf("GO");
+            break;
+    }
+
+    return 0;
+}
+Output
+GO
