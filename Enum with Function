@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+enum Operation
+{
+    ADD,
+    SUBTRACT
+};
+
+void calculate(enum Operation op, int a, int b)
+{
+    if(op == ADD)
+        printf("Result = %d", a + b);
+    else if(op == SUBTRACT)
+        printf("Result = %d", a - b);
+}
+
+int main()
+{
+    calculate(ADD, 20, 10);
+
+    return 0;
+}
+Output
+Result = 30
