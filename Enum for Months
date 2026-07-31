@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+enum Month
+{
+    JANUARY = 1,
+    FEBRUARY,
+    MARCH,
+    APRIL,
+    MAY,
+    JUNE
+};
+
+int main()
+{
+    enum Month m = APRIL;
+
+    printf("Month Number = %d\n", m);
+
+    return 0;
+}
+Output
+Month Number = 4
