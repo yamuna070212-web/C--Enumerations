@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+enum Grade
+{
+    FAIL,
+    PASS,
+    FIRST_CLASS,
+    DISTINCTION
+};
+
+int main()
+{
+    enum Grade grade = DISTINCTION;
+
+    switch(grade)
+    {
+        case FAIL:
+            printf("Fail");
+            break;
+
+        case PASS:
+            printf("Pass");
+            break;
+
+        case FIRST_CLASS:
+            printf("First Class");
+            break;
+
+        case DISTINCTION:
+            printf("Distinction");
+            break;
+    }
+
+    return 0;
+}
+Output
+Distinction
