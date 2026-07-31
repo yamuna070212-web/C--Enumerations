@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+enum Department
+{
+    CSE,
+    AIML,
+    ECE,
+    ME
+};
+
+typedef struct
+{
+    int id;
+    char name[20];
+    enum Department department;
+} Student;
+
+int main()
+{
+    Student s = {101, "Anu", AIML};
+
+    printf("ID = %d\n", s.id);
+    printf("Name = %s\n", s.name);
+    printf("Department Code = %d\n", s.department);
+
+    return 0;
+}
+Output
+ID = 101
+Name = Anu
+Department Code = 1
