@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+enum Status
+{
+    SUCCESS = 1,
+    ERROR = 2,
+    FAILED = 3
+};
+
+int main()
+{
+    enum Status s = SUCCESS;
+
+    printf("Status = %d\n", s);
+
+    return 0;
+}
+Output
+Status = 1
