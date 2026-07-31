@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+enum Color
+{
+    RED,
+    GREEN,
+    BLUE
+};
+
+int main()
+{
+    enum Color colors[3] = {RED, GREEN, BLUE};
+
+    for(int i = 0; i < 3; i++)
+    {
+        printf("%d ", colors[i]);
+    }
+
+    return 0;
+}
+Output
+0 1 2
