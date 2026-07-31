@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+enum OrderStatus
+{
+    ORDERED,
+    SHIPPED,
+    DELIVERED,
+    CANCELLED
+};
+
+int main()
+{
+    enum OrderStatus order = SHIPPED;
+
+    switch(order)
+    {
+        case ORDERED:
+            printf("Order Placed");
+            break;
+
+        case SHIPPED:
+            printf("Order Shipped");
+            break;
+
+        case DELIVERED:
+            printf("Order Delivered");
+            break;
+
+        case CANCELLED:
+            printf("Order Cancelled");
+            break;
+    }
+
+    return 0;
+}
+Output
+Order Shipped
