@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+enum Gender
+{
+    MALE,
+    FEMALE
+};
+
+struct Student
+{
+    int id;
+    char name[20];
+    enum Gender gender;
+};
+
+int main()
+{
+    struct Student s = {101, "Rahul", MALE};
+
+    printf("ID = %d\n", s.id);
+    printf("Name = %s\n", s.name);
+    printf("Gender = %d\n", s.gender);
+
+    return 0;
+}
+Output
+ID = 101
+Name = Rahul
+Gender = 0
