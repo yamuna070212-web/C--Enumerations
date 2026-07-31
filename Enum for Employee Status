@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+enum EmployeeStatus
+{
+    ACTIVE,
+    INACTIVE,
+    ON_LEAVE
+};
+
+int main()
+{
+    enum EmployeeStatus status = ACTIVE;
+
+    if(status == ACTIVE)
+        printf("Employee is Active\n");
+    else if(status == INACTIVE)
+        printf("Employee is Inactive\n");
+    else
+        printf("Employee is on Leave\n");
+
+    return 0;
+}
+Output
+Employee is Active
