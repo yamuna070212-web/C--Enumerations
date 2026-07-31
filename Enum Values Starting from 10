@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+enum Numbers
+{
+    TEN = 10,
+    TWENTY,
+    THIRTY
+};
+
+int main()
+{
+    printf("TEN = %d\n", TEN);
+    printf("TWENTY = %d\n", TWENTY);
+    printf("THIRTY = %d\n", THIRTY);
+
+    return 0;
+}
+Output
+TEN = 10
+TWENTY = 11
+THIRTY = 12
