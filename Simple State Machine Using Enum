@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+enum State
+{
+    START,
+    RUNNING,
+    STOPPED
+};
+
+int main()
+{
+    enum State state = START;
+
+    switch(state)
+    {
+        case START:
+            printf("System Started");
+            break;
+
+        case RUNNING:
+            printf("System Running");
+            break;
+
+        case STOPPED:
+            printf("System Stopped");
+            break;
+    }
+
+    return 0;
+}
+Output
+System Started
