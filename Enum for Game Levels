@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+enum Level
+{
+    EASY = 1,
+    MEDIUM,
+    HARD
+};
+
+int main()
+{
+    enum Level level = HARD;
+
+    if(level == HARD)
+        printf("Hard Level Selected");
+
+    return 0;
+}
+Output
+Hard Level Selected
