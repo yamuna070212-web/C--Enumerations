@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+enum Operation
+{
+    ADD,
+    SUBTRACT
+};
+
+void performOperation(enum Operation op)
+{
+    if(op == ADD)
+        printf("Addition Selected\n");
+    else
+        printf("Subtraction Selected\n");
+}
+
+int main()
+{
+    performOperation(ADD);
+
+    return 0;
+}
+Output
+Addition Selected
