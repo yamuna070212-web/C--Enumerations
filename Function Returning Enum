@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+enum Result
+{
+    FAIL,
+    PASS
+};
+
+enum Result checkMarks(int marks)
+{
+    if(marks >= 35)
+        return PASS;
+    else
+        return FAIL;
+}
+
+int main()
+{
+    enum Result r = checkMarks(80);
+
+    if(r == PASS)
+        printf("Student Passed\n");
+    else
+        printf("Student Failed\n");
+
+    return 0;
+}
+Output
+Student Passed
