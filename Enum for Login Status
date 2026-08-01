@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+enum LoginStatus
+{
+    LOGIN_SUCCESS,
+    INVALID_PASSWORD,
+    USER_NOT_FOUND
+};
+
+int main()
+{
+    enum LoginStatus status = INVALID_PASSWORD;
+
+    switch(status)
+    {
+        case LOGIN_SUCCESS:
+            printf("Login Successful");
+            break;
+
+        case INVALID_PASSWORD:
+            printf("Wrong Password");
+            break;
+
+        case USER_NOT_FOUND:
+            printf("User Not Found");
+            break;
+    }
+
+    return 0;
+}
+Output
+Wrong Password
