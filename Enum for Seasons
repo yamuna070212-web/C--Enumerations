@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+enum Season
+{
+    SPRING,
+    SUMMER,
+    RAINY,
+    WINTER
+};
+
+int main()
+{
+    enum Season s = WINTER;
+
+    switch(s)
+    {
+        case SPRING:
+            printf("Spring Season");
+            break;
+
+        case SUMMER:
+            printf("Summer Season");
+            break;
+
+        case RAINY:
+            printf("Rainy Season");
+            break;
+
+        case WINTER:
+            printf("Winter Season");
+            break;
+    }
+
+    return 0;
+}
+Output
+Winter Season
