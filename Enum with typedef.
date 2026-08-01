@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+typedef enum
+{
+    MALE,
+    FEMALE
+} Gender;
+
+int main()
+{
+    Gender g = FEMALE;
+
+    if(g == FEMALE)
+        printf("Female\n");
+    else
+        printf("Male\n");
+
+    return 0;
+}
+Output
+Female
