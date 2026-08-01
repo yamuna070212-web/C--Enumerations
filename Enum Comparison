@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+enum Level
+{
+    LOW,
+    MEDIUM,
+    HIGH
+};
+
+int main()
+{
+    enum Level level1 = HIGH;
+    enum Level level2 = MEDIUM;
+
+    if(level1 > level2)
+        printf("Level1 is Higher\n");
+    else
+        printf("Level2 is Higher\n");
+
+    return 0;
+}
+Output
+Level1 is Higher
