@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+enum Grade
+{
+    A = 65,
+    B = 66,
+    C = 67
+};
+
+int main()
+{
+    printf("%c\n", A);
+    printf("%c\n", B);
+    printf("%c\n", C);
+
+    return 0;
+}
+Output
+A
+B
+C
