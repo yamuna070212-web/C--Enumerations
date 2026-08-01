@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+enum Subject
+{
+    C,
+    CPP,
+    JAVA
+};
+
+int main()
+{
+    int marks[3] = {90, 85, 95};
+
+    printf("C Marks = %d\n", marks[C]);
+    printf("CPP Marks = %d\n", marks[CPP]);
+    printf("JAVA Marks = %d\n", marks[JAVA]);
+
+    return 0;
+}
+Output
+C Marks = 90
+CPP Marks = 85
+JAVA Marks = 95
