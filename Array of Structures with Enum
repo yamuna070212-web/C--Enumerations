@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+enum Gender
+{
+    MALE,
+    FEMALE
+};
+
+struct Student
+{
+    int id;
+    char name[20];
+    enum Gender gender;
+};
+
+int main()
+{
+    struct Student s[2] =
+    {
+        {1, "Rahul", MALE},
+        {2, "Priya", FEMALE}
+    };
+
+    for(int i = 0; i < 2; i++)
+    {
+        printf("%d %s %d\n",
+               s[i].id,
+               s[i].name,
+               s[i].gender);
+    }
+
+    return 0;
+}
+Output
+1 Rahul 0
+2 Priya 1
