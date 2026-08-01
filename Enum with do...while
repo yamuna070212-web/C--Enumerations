@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+enum Number
+{
+    ONE = 1,
+    TWO,
+    THREE
+};
+
+int main()
+{
+    enum Number n = ONE;
+
+    do
+    {
+        printf("%d ", n);
+        n++;
+    }
+    while(n <= THREE);
+
+    return 0;
+}
+Output
+1 2 3
