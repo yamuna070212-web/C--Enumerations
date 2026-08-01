@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+enum OrderStatus
+{
+    ORDER_RECEIVED,
+    PROCESSING,
+    SHIPPED,
+    OUT_FOR_DELIVERY,
+    DELIVERED
+};
+
+int main()
+{
+    enum OrderStatus status = OUT_FOR_DELIVERY;
+
+    switch(status)
+    {
+        case ORDER_RECEIVED:
+            printf("Order Received\n");
+            break;
+
+        case PROCESSING:
+            printf("Processing\n");
+            break;
+
+        case SHIPPED:
+            printf("Shipped\n");
+            break;
+
+        case OUT_FOR_DELIVERY:
+            printf("Out for Delivery\n");
+            break;
+
+        case DELIVERED:
+            printf("Delivered\n");
+            break;
+    }
+
+    return 0;
+}
+Output
+Out for Delivery
