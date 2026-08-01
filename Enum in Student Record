@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+enum Branch
+{
+    CSE,
+    AIML,
+    ECE,
+    CIVIL
+};
+
+struct Student
+{
+    int id;
+    char name[20];
+    enum Branch branch;
+};
+
+int main()
+{
+    struct Student s = {101, "Rahul", AIML};
+
+    printf("ID = %d\n", s.id);
+    printf("Name = %s\n", s.name);
+    printf("Branch Code = %d\n", s.branch);
+
+    return 0;
+}
+Output
+ID = 101
+Name = Rahul
+Branch Code = 1
