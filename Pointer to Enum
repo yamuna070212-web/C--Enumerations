@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+enum Color
+{
+    RED,
+    GREEN,
+    BLUE
+};
+
+int main()
+{
+    enum Color color = GREEN;
+    enum Color *ptr = &color;
+
+    printf("Color = %d\n", *ptr);
+
+    return 0;
+}
+Output
+Color = 1
