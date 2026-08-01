@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+enum ATM
+{
+    BALANCE = 1,
+    DEPOSIT,
+    WITHDRAW,
+    EXIT
+};
+
+int main()
+{
+    enum ATM choice = DEPOSIT;
+
+    switch(choice)
+    {
+        case BALANCE:
+            printf("Balance Enquiry\n");
+            break;
+
+        case DEPOSIT:
+            printf("Deposit Money\n");
+            break;
+
+        case WITHDRAW:
+            printf("Withdraw Money\n");
+            break;
+
+        case EXIT:
+            printf("Exit\n");
+            break;
+    }
+
+    return 0;
+}
+Output
+Deposit Money
