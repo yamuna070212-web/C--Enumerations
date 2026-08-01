@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+enum Network
+{
+    JIO,
+    AIRTEL,
+    VI,
+    BSNL
+};
+
+int main()
+{
+    enum Network sim = JIO;
+
+    switch(sim)
+    {
+        case JIO:
+            printf("Using Jio");
+            break;
+
+        case AIRTEL:
+            printf("Using Airtel");
+            break;
+
+        case VI:
+            printf("Using Vi");
+            break;
+
+        case BSNL:
+            printf("Using BSNL");
+            break;
+    }
+
+    return 0;
+}
+Output
+Using Jio
