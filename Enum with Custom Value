@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+enum ErrorCode
+{
+    SUCCESS = 100,
+    WARNING = 200,
+    ERROR = 300
+};
+
+int main()
+{
+    enum ErrorCode code = ERROR;
+
+    printf("Error Code = %d\n", code);
+
+    return 0;
+}
+Output
+Error Code = 300
