@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+enum Day
+{
+    MONDAY,
+    TUESDAY,
+    WEDNESDAY,
+    THURSDAY,
+    FRIDAY
+};
+
+int main()
+{
+    for(int i = MONDAY; i <= FRIDAY; i++)
+    {
+        printf("%d ", i);
+    }
+
+    return 0;
+}
+Output
+0 1 2 3 4
